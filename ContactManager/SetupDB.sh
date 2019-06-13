@@ -1,0 +1,1 @@
+dotnet exec --runtimeconfig ContactManager.runtimeconfig.json --depsfile ContactManager.deps.json Microsoft.EntityFrameworkCore.Design.dll --assembly MyWebApp.dll --verbose database update

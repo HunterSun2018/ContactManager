@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-ContactManager-443E1F44-2245-4194-B2B4-E257A92B5D84</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\backup\**" />
+    <Content Remove="Data\Migrations\backup\**" />
+    <EmbeddedResource Remove="Data\Migrations\backup\**" />
+    <None Remove="Data\Migrations\backup\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\00000000000000_CreateIdentitySchema.cs" />
+    <Compile Remove="Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180103080722_Contact.cs" />
+    <Compile Remove="Data\Migrations\20180103080722_Contact.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180103081122_UserID_Status.cs" />
+    <Compile Remove="Data\Migrations\20180103081122_UserID_Status.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180105104558_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20180105104558_InitialCreate.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180105125340_Employee.cs" />
+    <Compile Remove="Data\Migrations\20180105125340_Employee.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180502055010_NewLocalSql.cs" />
+    <Compile Remove="Data\Migrations\20180502055010_NewLocalSql.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180502061143_LocalInitialization.cs" />
+    <Compile Remove="Data\Migrations\20180502061143_LocalInitialization.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180502061457_AppInitialization.cs" />
+    <Compile Remove="Data\Migrations\20180502061457_AppInitialization.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180504044618_AppForMySQL.cs" />
+    <Compile Remove="Data\Migrations\20180504044618_AppForMySQL.Designer.cs" />
+    <Compile Remove="Migrations\20180413090336_ComplexDB.cs" />
+    <Compile Remove="Migrations\20180413090336_ComplexDB.Designer.cs" />
+    <Compile Remove="Migrations\20180502032347_lcoalsql.cs" />
+    <Compile Remove="Migrations\20180502032347_lcoalsql.Designer.cs" />
+    <Compile Remove="Migrations\20180502061841_SchoolInitialization.cs" />
+    <Compile Remove="Migrations\20180502061841_SchoolInitialization.Designer.cs" />
+    <Compile Remove="Migrations\20180725014040_AppDbCxtInit.cs" />
+    <Compile Remove="Migrations\20180725014040_AppDbCxtInit.Designer.cs" />
+    <Compile Remove="Migrations\20180725053934_ChangeContactId.cs" />
+    <Compile Remove="Migrations\20180725053934_ChangeContactId.Designer.cs" />
+    <Compile Remove="Migrations\20180725054241_ChangeContactId.cs" />
+    <Compile Remove="Migrations\20180725054241_ChangeContactId.Designer.cs" />
+    <Compile Remove="Migrations\20180725055017_AppDbInit.cs" />
+    <Compile Remove="Migrations\20180725055017_AppDbInit.Designer.cs" />
+    <Compile Remove="Migrations\20180725142908_SchoolDbIni.cs" />
+    <Compile Remove="Migrations\20180725142908_SchoolDbIni.Designer.cs" />
+    <Compile Remove="Migrations\20180725142940_SchoolDbInit.cs" />
+    <Compile Remove="Migrations\20180725142940_SchoolDbInit.Designer.cs" />
+    <Compile Remove="Migrations\ApplicationDb\20180504044719_AppForMySQL.cs" />
+    <Compile Remove="Migrations\ApplicationDb\20180504044719_AppForMySQL.Designer.cs" />
+    <Compile Remove="Migrations\School\20180725055420_SchoolDbInit.cs" />
+    <Compile Remove="Migrations\School\20180725055420_SchoolDbInit.Designer.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />    
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" PrivateAssets="All" />    
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Migrations\ApplicationDb\" />
+  </ItemGroup>
+
+</Project>
